@@ -242,7 +242,7 @@ body {
   text-align: left;
 }
 
-.button {
+.button-line {
   margin-top: 23px;
   background-color: #fff;
   border: none;
@@ -254,7 +254,11 @@ body {
 }
 
 .button-desert {
-  margin-top: 64px;
+  margin-top: 60px;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+
 }
 
 .sosy {
@@ -277,6 +281,7 @@ body {
   font-size: 45px;
   margin-bottom: 0;
   margin-top: 20px;
+  margin-right: 8px;
   text-transform: none;
   /* text-transform: uppercase; */
 }
@@ -309,7 +314,7 @@ body {
   margin-left: 10px;
 }
 
-@media (max-width: 1400px){
+@media (min-width:1200px) and (max-width: 1400px){
   .titles-1 {
     /* display: flex; */
     /* justify-content: center; */
@@ -330,13 +335,18 @@ body {
     /* margin-top: 20px; */
     /* text-transform: uppercase; */
   }
-
+  .dish-6 {
+    padding-left: 22px;
+  }
+  .dish-12 {
+    padding-left: 22px;
+  }
   .dish-text {
     /* margin-top: -10px; */
     /* margin-bottom: 0; */
     /* font-family: 'oswald-light'; */
     /* font-size: 19px; */
-    font-size: 15px;
+    font-size: 18px;
   }
   .menu-line {
     justify-content: space-between;
@@ -378,6 +388,15 @@ body {
     /* text-transform: none; */
     /* text-transform: uppercase; */
   }
+  .button-line {
+    margin-top: 18px;
+    /* background-color: #fff; */
+    /* border: none; */
+    /* padding: 0; */
+  }
+  .button-desert {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -392,11 +411,29 @@ body {
     z-index: -9;
     /* И вообще он находится позади экрана ))  */
   }
-
+  .kebab-menu {
+    padding-left: 0;
+  }
+  .vegan-menu {
+    padding-left: 0;
+  }
+  .line-6, .dish-6, .dish-12 {
+    padding-left: 0;
+  }
+  .row-panzorro {
+    text-align: center;   /* Выравниваем заголовки меню по центру */
+  }
+  .line-1, .line-2, .line-3, .line-4, .line-5, .line-6 { /* Выравниваем строки меню по центру */
+    justify-content: center;
+  }
+  .kebab,
+  .vegan {
+    margin-top: 50px;
+  }
+  
 }
 
 @media (max-width: 992px){
-
 }
 
 
