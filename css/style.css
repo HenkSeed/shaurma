@@ -36,18 +36,29 @@
 body {
   margin: 0;
   padding: 0;
+  height: auto;
+  width: auto;
 }
 
 .header {
   /* margin: 0; */
-  align-items: center;
+  /* align-items: center; */
   background-color: #F9DB79;
   height: 116px;
   border-bottom: 2px solid #fff;
 }
 
+.header-row {
+  height: 100%;
+  /* Если не указать высоту, то не будет центрироваться по вертикали - не сработает align-items-center */
+}
+
+/* .header-container {
+  align-items:center;
+} */
+
 .button-wrapper {
-  justify-content:center;
+  justify-content: center;
 }
 
 .button-header {
@@ -62,9 +73,13 @@ body {
 }
 
 .face {
+  display: flex;
   background-color: #F9DB79;
-  height: 965px;
-  /* justify-content: center; */
+  /* width: 100%; */
+  height: 100%;
+  /* height: 965px; */
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .face-text {
@@ -77,34 +92,52 @@ body {
   /* justify-content: center; */
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
 .first-line-text {
   font-family: 'oswald-bold';
   font-size: 170px;
   line-height: 1;
   color: #fff;
-  }
+}
 
-  .face-image {
-    justify-content: center;
-    text-align: center;
-    margin-top: -27px;
-  }
+.face-image {
+  justify-content: center;
+  text-align: center;
+  margin-top: -27px;
+  margin: 0 auto;
+}
 
-  .face-button {
-    /* justify-content: center; */
-    text-align: center;
-    margin: 34px;
-  }
-  
-  .face-button-menu {
-    font-family: 'oswald-light';
-    font-size: 68px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #F9DB79;
-    padding: 8px 95px;
-    border: 4px solid #fff;
-  }
+.face-button {
+  /* justify-content: center; */
+  text-align: center;
+  margin: 34px auto;
+}
+
+.face-button-menu {
+  font-family: 'oswald-light';
+  font-size: 68px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #F9DB79;
+  padding: 8px 95px;
+  border: 4px solid #fff;
+}
+
+.menu-panzorro {
+  display: flex;
+  justify-content: center;
+}
 
 .menu {
   margin: 0;
@@ -113,7 +146,7 @@ body {
   line-height: 150px;
   font-style: normal;
   font-weight: normal;
- }
+}
 
 .titles-1 {
   display: flex;
@@ -129,11 +162,37 @@ body {
   margin-bottom: 20px;
 }
 
-.kebab, .vegan {
+.kebab,
+.vegan {
   font-size: 102px;
   letter-spacing: -0.5px;
   line-height: 92px;
   margin: 0;
+}
+
+.kebab-menu {
+  padding-left: 32px;
+  /* display: flex; */
+}
+
+.vegan-menu {
+  padding-left: 32px;
+}
+
+.menu-line {
+  display: flex;
+}
+
+.dish-6 {
+  padding-left: 32px;
+}
+
+.dish-12 {
+  padding-left: 32px;
+}
+
+.napoj-frutki {
+  display: flex;
 }
 
 .dish {
@@ -164,6 +223,14 @@ body {
   text-transform: uppercase;
 }
 
+.dish-title-desert span {
+  font-family: 'oswald-light';
+  font-size: 45px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
 .dish-text-desert {
   margin-top: -10px;
   margin-bottom: 0;
@@ -177,25 +244,24 @@ body {
 
 .button {
   margin-top: 23px;
-  background-color:#fff;
+  background-color: #fff;
   border: none;
   padding: 0;
 }
 
 .button-icon {
-  background-color:#fff;
+  background-color: #fff;
 }
 
 .button-desert {
   margin-top: 64px;
 }
 
-.dish-title-desert span {
-  font-family: 'oswald-light';
-  font-size: 45px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  text-transform: uppercase;
+.sosy {
+  padding-left: 32px;
+  padding-right: 0;
+  /* padding: 0; */
+  /* display: flex; */
 }
 
 .dish-title-sosy {
@@ -205,6 +271,7 @@ body {
   margin-top: 38px;
   text-transform: uppercase;
 }
+
 .dish-title-sosy-span {
   font-family: 'oswald-light';
   font-size: 45px;
@@ -215,9 +282,16 @@ body {
 }
 
 .footer {
-  background-color: #17191A;
   height: 140px;
+  display: flex;
+  justify-content: center;
+  background-color: #17191A;
   align-items: center;
+}
+
+.footer-row {
+  height: 100%;
+  /* аналогично с header-row (смотри примечание) */
 }
 
 .footer-text {
@@ -235,4 +309,113 @@ body {
   margin-left: 10px;
 }
 
-/*  */
+@media (max-width: 1400px){
+  .titles-1 {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 123px;
+    margin-top: 93px;
+  }
+  .kebab,
+  .vegan {
+    font-size: 82px;
+    letter-spacing: -0.5px;
+    line-height: 92px;
+    margin: 0;
+  }
+  .dish-title {
+    /* font-size: 45px; */
+    font-size: 35px;
+    /* margin-bottom: 0; */
+    /* margin-top: 20px; */
+    /* text-transform: uppercase; */
+  }
+
+  .dish-text {
+    /* margin-top: -10px; */
+    /* margin-bottom: 0; */
+    /* font-family: 'oswald-light'; */
+    /* font-size: 19px; */
+    font-size: 15px;
+  }
+  .menu-line {
+    justify-content: space-between;
+  }
+  .dish-title-desert {
+    /* font-family: 'oswald-regular'; */
+    /* font-size: 66px; */
+    font-size: 50px;
+    /* margin-bottom: 0; */
+    /* margin-top: 38px; */
+    /* text-transform: uppercase; */
+  }
+
+  .dish-title-desert span {
+    /* font-family: 'oswald-light'; */
+    /* font-size: 45px; */
+    font-size: 35px;
+    /* margin-bottom: 0; */
+    /* margin-top: 20px; */
+    /* text-transform: uppercase; */
+  }
+
+  .dish-title-sosy {
+    /* font-family: 'oswald-regular'; */
+    /* font-size: 66px; */
+    font-size: 50px;
+    /* margin-bottom: 91px; */
+    /* margin-top: 38px; */
+    /* text-transform: uppercase; */
+  }
+
+  .dish-title-sosy-span {
+    /* font-family: 'oswald-light'; */
+    /* font-size: 45px; */
+    font-size: 35px;
+    letter-spacing: 1.1;
+    /* margin-bottom: 0; */
+    /* margin-top: 20px; */
+    /* text-transform: none; */
+    /* text-transform: uppercase; */
+  }
+}
+
+@media (max-width: 1200px) {
+  .titles-1 {
+    /* При уменьшении экрана прячем MENU и PanZorro на белом фоне */
+    opacity: 0;
+    /* Видимость 0 (нисколько света не задерживается в объекте) */
+    visibility: hidden;
+    /* Объект скрыт */
+    position: absolute;
+    /* Объект не взаимодействует с соседними блоками */
+    z-index: -9;
+    /* И вообще он находится позади экрана ))  */
+  }
+
+}
+
+@media (max-width: 992px){
+
+}
+
+
+
+@media (max-width: 576px) {
+  .header {
+    height: 140px;
+  }
+
+  .header-row {
+    justify-content: center;
+  }
+
+  .logo-header {
+    text-align: center;
+  }
+
+  .first-line-text {
+    font-size: 100px;
+  }
+
+}
