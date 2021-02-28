@@ -1,238 +1,601 @@
 @font-face {
-  font-family: 'oswald-light';
-  src: url('../fonts/oswald-light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "oswald-light";
+	src: url("../fonts/oswald-light.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'oswald-regular';
-  src: url('../fonts/oswald-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "oswald-regular";
+	src: url("../fonts/oswald-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'oswald-bold';
-  src: url('../fonts/oswald-bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "oswald-bold";
+	src: url("../fonts/oswald-bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sverdlovsk';
-  src: url('../fonts/sverdlovskregular.otf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Sverdlovsk";
+	src: url("../fonts/sverdlovskregular.otf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
-  src: url('../fonts/MyriadPro-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Myriad Pro Regular";
+	src: url("../fonts/MyriadPro-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: auto;
 }
 
 .header {
-  /* margin: 0; */
-  align-items: center;
-  background-color: #F9DB79;
-  height: 116px;
-  border-bottom: 2px solid #fff;
+	/* margin: 0; */
+	/* align-items: center; */
+	background-color: #f9db79;
+	height: 116px;
+	border-bottom: 2px solid #fff;
 }
 
+.header-row {
+	height: 100%;
+	/* Если не указать высоту, то не будет центрироваться по вертикали - не сработает align-items-center */
+}
+
+/* .header-container {
+  align-items:center;
+} */
+
 .button-wrapper {
-  justify-content:center;
+	justify-content: center;
 }
 
 .button-header {
-  background-color: #F9DB79;
-  border: none;
-  text-align: center;
-  /* align-items:center; */
+	background-color: #f9db79;
+	border: none;
+	text-align: center;
+	/* align-items:center; */
 }
 
 .button-header-icon {
-  background-color: #F9DB79;
+	background-color: #f9db79;
 }
 
 .face {
-  background-color: #F9DB79;
-  height: 965px;
-  /* justify-content: center; */
+	display: flex;
+	background-color: #f9db79;
+	/* width: 100%; */
+	height: 100%;
+	/* height: 965px; */
+	justify-content: center;
+	margin: 0 auto;
 }
 
 .face-text {
-  height: 140px;
-  margin-bottom: 0;
-  margin-top: 15px;
-  text-align: center;
-  z-index: 20;
-  /* align-items: center; */
-  /* justify-content: center; */
+	height: 140px;
+	margin-bottom: 0;
+	margin-top: 15px;
+	text-align: center;
+	z-index: 20;
+	/* align-items: center; */
+	/* justify-content: center; */
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
 }
 
 .first-line-text {
-  font-family: 'oswald-bold';
-  font-size: 170px;
-  line-height: 1;
-  color: #fff;
-  }
+	font-family: "oswald-bold";
+	font-size: 170px;
+	line-height: 1;
+	color: #fff;
+}
 
-  .face-image {
-    justify-content: center;
-    text-align: center;
-    margin-top: -27px;
-  }
+.face-image {
+	justify-content: center;
+	text-align: center;
+	margin-top: -27px;
+	margin: 0 auto;
+}
 
-  .face-button {
-    /* justify-content: center; */
-    text-align: center;
-    margin: 34px;
-  }
-  
-  .face-button-menu {
-    font-family: 'oswald-light';
-    font-size: 68px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #F9DB79;
-    padding: 8px 95px;
-    border: 4px solid #fff;
-  }
+.face-button {
+	/* justify-content: center; */
+	text-align: center;
+	margin: 34px auto;
+}
+
+.face-button-menu {
+	font-family: "oswald-light";
+	font-size: 68px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #f9db79;
+	padding: 8px 95px;
+	border: 4px solid #fff;
+}
+
+.menu-panzorro {
+	display: flex;
+	justify-content: center;
+}
 
 .menu {
-  margin: 0;
-  font-family: 'Sverdlovsk';
-  font-size: 200px;
-  line-height: 150px;
-  font-style: normal;
-  font-weight: normal;
- }
+	margin: 0;
+	font-family: "Sverdlovsk";
+	font-size: 200px;
+	line-height: 150px;
+	font-style: normal;
+	font-weight: normal;
+}
 
 .titles-1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 183px;
-  margin-top: 138px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 183px;
+	margin-top: 138px;
 }
 
 .titles-2 {
-  font-family: 'oswald-light';
-  text-transform: uppercase;
-  font-weight: 100;
-  margin-bottom: 20px;
+	font-family: "oswald-light";
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-bottom: 20px;
 }
 
-.kebab, .vegan {
-  font-size: 102px;
-  letter-spacing: -0.5px;
-  line-height: 92px;
-  margin: 0;
+.kebab,
+.vegan {
+	font-size: 102px;
+	letter-spacing: -0.5px;
+	line-height: 92px;
+	margin: 0;
+}
+
+.kebab-menu {
+	padding-left: 0px; /* Для зазора между двумя колонками меню */
+	/* display: flex; */
+}
+
+.vegan-menu {
+	padding-left: 32px; /* Для зазора между двумя колонками меню */
+}
+
+.menu-line {
+	display: flex;
+}
+
+.dish-6 {
+	padding-left: 0px;
+}
+
+.dish-12 {
+	padding-left: 32px;
+}
+
+.napoj-frutki {
+	display: flex;
 }
 
 .dish {
-  font-family: 'oswald-light';
-  margin-top: 0;
-  /* height: 37px; */
+	font-family: "oswald-light";
+	margin-top: 0;
+	/* height: 37px; */
+}
+
+.dish-6-price {
+	padding-left: 25px;
+}
+
+.dish-12-price {
+	padding-left: 25px;
 }
 
 .dish-title {
-  font-size: 45px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  text-transform: uppercase;
+	font-size: 45px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 
 .dish-text {
-  margin-top: -10px;
-  margin-bottom: 0;
-  font-family: 'oswald-light';
-  font-size: 19px;
+	margin-top: -10px;
+	margin-bottom: 0;
+	font-family: "oswald-light";
+	font-size: 19px;
 }
 
 .dish-title-desert {
-  font-family: 'oswald-regular';
-  font-size: 66px;
-  margin-bottom: 0;
-  margin-top: 38px;
-  text-transform: uppercase;
-}
-
-.dish-text-desert {
-  margin-top: -10px;
-  margin-bottom: 0;
-  font-family: 'oswald-light';
-  font-size: 22px;
-}
-
-.dish p {
-  text-align: left;
-}
-
-.button {
-  margin-top: 23px;
-  background-color:#fff;
-  border: none;
-  padding: 0;
-}
-
-.button-icon {
-  background-color:#fff;
-}
-
-.button-desert {
-  margin-top: 64px;
+	font-family: "oswald-regular";
+	font-size: 66px;
+	margin-bottom: 0;
+	margin-top: 38px;
+	text-transform: uppercase;
 }
 
 .dish-title-desert span {
-  font-family: 'oswald-light';
-  font-size: 45px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  text-transform: uppercase;
+	font-family: "oswald-light";
+	font-size: 45px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.dish-text-desert {
+	margin-top: -10px;
+	margin-bottom: 0;
+	font-family: "oswald-light";
+	font-size: 22px;
+}
+
+.dish p {
+	text-align: left;
+}
+
+.button-line {
+	margin-top: 23px;
+	background-color: #fff;
+	border: none;
+	padding: 0;
+}
+
+.button-icon {
+	background-color: #fff;
+}
+
+.button-desert {
+	margin-top: 60px;
+	background-color: #fff;
+	border: none;
+	padding: 0;
+}
+
+.button-desert-sosy {
+	margin-top: 20px;
+	background-color: #fff;
+	border: none;
+	padding: 0;
+}
+
+.sosy {
+	/* padding-left: 32px; */
+	padding-right: 0;
+	/* padding: 0; */
+	display: flex;
+	padding-top: 40px;
+}
+
+.sosy-col-12 {
+	padding: 0;
+}
+
+.dish-13 {
+	padding-left: 0px;
 }
 
 .dish-title-sosy {
-  font-family: 'oswald-regular';
-  font-size: 66px;
-  margin-bottom: 91px;
-  margin-top: 38px;
-  text-transform: uppercase;
+	font-family: "oswald-regular";
+	font-size: 66px;
+	margin-bottom: 91px;
+	margin-top: 38px;
+	text-transform: uppercase;
 }
-.dish-title-sosy-span {
-  font-family: 'oswald-light';
-  font-size: 45px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  text-transform: none;
-  /* text-transform: uppercase; */
+
+.dish-title-sosy-span,
+.dish-title-sosy-price {
+	font-family: "oswald-light";
+	font-size: 45px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	/* margin-right: 8px; */
+	text-transform: none;
+	/* text-transform: uppercase; */
 }
 
 .footer {
-  background-color: #17191A;
-  height: 140px;
-  align-items: center;
+	height: 140px;
+	display: flex;
+	justify-content: center;
+	background-color: #17191a;
+	/* background-color: #00ff00; */
+	align-items: center;
+}
+
+.footer-row {
+	height: 100%;
+	/* аналогично с header-row (смотри примечание) */
 }
 
 .footer-text {
-  /* font-family: 'oswald-light'; */
-  font-family: 'Myriad Pro Regular';
-  color: #fff;
-  font-size: 32px;
+	/* font-family: 'oswald-light'; */
+	font-family: "Myriad Pro Regular";
+	color: #fff;
+	font-size: 32px;
+}
+
+.footer-copyright {
+	padding: 0;
+	justify-content: start;
+}
+
+.footer-social-block {
+	padding: 0;
+	justify-content: end;
 }
 
 .footer-social {
-  margin-left: 40px;
+	/* margin-left: 40px; */
 }
 
 .social-link {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
-/*  */
+@media (min-width: 1200px) and (max-width: 1400px) {
+	.titles-1 {
+		margin-bottom: 123px;
+		margin-top: 93px;
+	}
+	.kebab,
+	.vegan {
+		font-size: 82px;
+		letter-spacing: -0.5px;
+		line-height: 92px;
+		margin: 0;
+	}
+	.dish-title {
+		font-size: 35px;
+	}
+	.dish-6 {
+		padding-left: 0px;
+	}
+	.dish-12 {
+		padding-left: 32px;
+	}
+	.dish-text {
+		font-size: 18px;
+	}
+	.menu-line {
+		justify-content: space-between;
+	}
+	.dish-title-desert {
+		font-size: 50px;
+	}
+	.dish-title-desert span {
+		font-size: 35px;
+	}
+
+	.dish-title-sosy {
+		font-size: 50px;
+	}
+
+	.dish-title-sosy-span,
+	.dish-title-sosy-price {
+		font-size: 35px;
+		letter-spacing: 1.1;
+		margin-right: 0;
+	}
+	.button-line {
+		margin-top: 18px;
+	}
+	.button-desert {
+		margin-top: 50px;
+	}
+	.button-desert-sosy {
+		/* margin-top: 100px; */
+		/* background-color: #fff; */
+		/* border: none; */
+		/* padding: 0; */
+	}
+}
+
+@media (max-width: 1200px) {
+	.titles-1 {
+		/* При уменьшении экрана прячем MENU и PanZorro на белом фоне */
+		opacity: 0;
+		/* Видимость 0 (нисколько света не задерживается в объекте) */
+		visibility: hidden;
+		/* Объект скрыт */
+		position: absolute;
+		/* Объект не взаимодействует с соседними блоками */
+		z-index: -9;
+		/* И вообще он находится позади экрана ))  */
+	}
+	.kebab-menu {
+		padding-left: 0;
+	}
+	.vegan-menu {
+		padding-left: 0;
+	}
+	.line-6,
+	.dish-6,
+	.dish-12 {
+		padding-left: 0;
+	}
+	.row-panzorro {
+		text-align: center; /* Выравниваем заголовки меню по центру */
+	}
+	.line-1,
+	.line-2,
+	.line-3,
+	.line-4,
+	.line-5,
+	.line-6 {
+		/* Выравниваем строки меню по центру */
+		justify-content: center;
+	}
+	.kebab,
+	.vegan {
+		margin-top: 50px;
+	}
+	.sosy {
+		padding-left: 0;
+		justify-content: center;
+	}
+	.sosy-col-12 {
+		/* width: 640px; */
+	}
+	.dish-13 {
+		padding-left: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	.sosy-lit {
+		display: block;
+	}
+	.dish-title-sosy-span {
+		margin-right: 0;
+		/* margin-left: -10px; */
+		font-size: 25px;
+		letter-spacing: 1.1;
+		margin-right: 0;
+		padding-left: 10px;
+		padding-top: 25px;
+		display: block;
+	}
+
+	.button-desert-sosy {
+		margin-top: 50px;
+		/* background-color: #fff; */
+		/* border: none; */
+		/* padding: 0; */
+	}
+	.footer {
+		height: 220px;
+		/* display: flex; */
+		/* justify-content: center; */
+		/* background-color: #17191A; */
+		/* align-items: center; */
+	}
+	.footer-copyright {
+		/* padding: 0; */
+		text-align: center;
+	}
+
+	.footer-social-block {
+		/* padding: 0; */
+		justify-content: center;
+	}
+}
+
+@media (max-width: 992px) {
+	.price-napoj {
+		width: 43px;
+	}
+	.dish-13 {
+		padding-left: 0px;
+		/* display: flex; */
+		/* justify-content: center; */
+	}
+}
+
+@media (max-width: 768px) {
+	.price-napoj {
+		width: 43px;
+	}
+	.kebab,
+	.vegan {
+		font-size: 62px;
+		letter-spacing: -0.5px;
+		line-height: 72px;
+		margin: 0;
+		margin-top: 20px;
+	}
+	.button-line {
+		margin-top: 12px;
+	}
+
+	.dish-title {
+		font-size: 35px;
+	}
+	.dish-6 {
+		padding-left: 0px;
+	}
+	.dish-12 {
+		padding-left: 5px;
+	}
+	.dish-text {
+		font-size: 16px;
+	}
+
+	.dish-title-desert {
+		font-size: 50px;
+	}
+	.dish-title-desert span {
+		font-size: 35px;
+	}
+	.dish-text-desert {
+		/* margin-top: -10px; */
+		/* margin-bottom: 0; */
+		/* font-family: 'oswald-light'; */
+		font-size: 22px;
+	}
+	.dish-title-sosy-price {
+		font-size: 35px;
+		/* margin-top: 20px; */
+		/* padding-bottom: 15px; */
+		/* margin-bottom: 15px; */
+	}
+	.button-desert-sosy {
+		margin-top: 40px;
+	}
+	.dish-title-sosy-span {
+		font-size: 20px;
+	}
+	.sosy {
+		/* padding-right: 0; */
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.dish-title-sosy {
+		font-size: 55px;
+	}
+	.sosy-lit {
+		margin-left: 10px;
+	}
+	.button-desert {
+		margin-top: 45px;
+		/* background-color: #fff; */
+		/* border: none; */
+		/* padding: 0; */
+	}
+}
+
+@media (max-width: 576px) {
+	.header {
+		height: 140px;
+	}
+
+	.header-row {
+		justify-content: center;
+	}
+
+	.logo-header {
+		text-align: center;
+	}
+
+	.first-line-text {
+		font-size: 100px;
+	}
+	.dish-12-price {
+		padding-left: 18px;
+	}
+}
