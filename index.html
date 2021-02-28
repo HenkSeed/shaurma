@@ -1,319 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pan Zorro - Prawdziwa Shoarma</title>
-   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
- <header class="header d-flex justify-content-center">
-   <div class="container">
-     <div class="row">
-      <div class="col-lg-2 col-sm-4 col-6 logo-header">
-        <img src="img/logo-header.svg" alt="Logo">
-      </div>
-      <!-- /.col-lg-2 -->
-      <div class="col-lg-8 col-sm-6">
-        <!-- Пустое пространство между лого и корзиной -->
-      </div>
-      <!-- /.col-lg-8 -->
-       <div class="col-lg-2 col-sm-2 col-6 d-flex button-wrapper">
-        <button class="button-header">
-          <img class="button-header-icon" src="img/cart.svg" alt="icon: cart">
-          <!-- <span class="button-text">Cart</span> -->
-        </button>
-      </div>
-      <!-- /.col-lg-2 -->
-     </div>
-     <!-- /.row -->
-   </div>
-   <!-- /.container -->
- </header>
- <!-- /.header -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pan Zorro - Prawdziwa Shoarma</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header d-flex justify-content-center">
+			<!-- justify-content-center выравнивает контейнер по центру хедера -->
+			<div class="container header-container align-items-center">
+				<div class="row header-row align-items-center">
+					<div class="col-lg-2 col-sm-6 col-6 logo-header">
+						<img src="img/logo-header.svg" alt="Logo" />
+					</div>
+					<!-- /.col-xxl-2 -->
+					<div class="col-lg-8 col-sm-1">
+						<!-- Пустое пространство между лого и корзиной -->
+					</div>
+					<!-- /.col-xxl-8 -->
+					<div class="col-lg-2 col-sm-5 col-6 d-flex button-wrapper">
+						<!-- Корзина в хедере -->
+						<button class="button-header">
+							<img
+								class="button-header-icon"
+								src="img/cart.svg"
+								alt="icon: cart"
+							/>
+							<!-- <span class="button-text">Cart</span> -->
+						</button>
+					</div>
+					<!-- /.col-xxl-2 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</header>
+		<!-- /.header -->
 
-          <!-- Верхнее фото с кнопкой -->
-  <section class="face">
-    <div class="container">
-      <div class="row">
-        <div class="face-text">
-          <span class="first-line-text">Talerz Kebab</span>
-        </div>
-        <div class="face-image">
-          <img src="img/first-line-image.png" alt="image: Plate with food" width="1190" height="638">
-        </div>
-        <div class="face-button">
-          <button class="face-button-menu">menu</button>
-        </div>
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.image-top -->
+		<!-- Верхнее фото с кнопкой -->
+		<section class="face">
+			<div class="container">
+				<div class="row">
+					<div class="face-text">
+						<span class="first-line-text">Talerz Kebab</span>
+					</div>
+					<div class="face-image">
+						<img
+							src="img/first-line-image.png"
+							alt="image: Plate with food"
+							width="100%"
+						/>
+						<!-- height="638" -->
+					</div>
+					<div class="face-button">
+						<button class="face-button-menu">menu</button>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.image-top -->
 
-  <section class="menu-panzorro">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 px-0">
-          <div class="titles-1">
-            <h1 class="menu">MENU</h1>
-          </div>
-          <!-- /.titles -->
-        </div>
-        <!-- /.col-lg-6 -->
-        <div class="col-lg-6 px-0">
-          <div class="titles-1">
-            <img src="img/panZorro.svg" alt="PanZorro" height="150px">
-          </div>
-          <!-- /.titles -->
-        </div>
-        <!-- /.col-lg-6 -->
-        <div class="col-lg-6 px-0">
-          <div class="titles-2">
-            <h2 class="kebab">kebab</h2>
-          </div>
-          <!-- /.titles -->
-        </div>
-        <!-- /.col-lg-6 -->
-        <div class="col-lg-6 px-0">
-          <div class="titles-2">
-            <h2 class="vegan">vegan</h2>
-          </div>
-          <!-- /.titles -->
-        </div>
-        <!-- /.col-lg-6 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-1">
-            <p class="dish-title">SHOARMA mała.............................15</p>
-            <p class="dish-text">(kurczak, lawasz, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-1 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-2">
-            <p class="dish-title">SHOARMA mała.............................15</p>
-            <p class="dish-text">(falafel, lawasz, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-2 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-3">
-            <p class="dish-title">SHOARMA duża..............................17</p>
-            <p class="dish-text">(kurczak, lawasz, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-3 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-4">
-            <p class="dish-title">SHOARMA duża..............................17</p>
-            <p class="dish-text">(falafel, lawasz, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-4 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-5">
-            <p class="dish-title">bułka.................................................17</p>
-            <p class="dish-text">(kurczak, bułka, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-5 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-6">
-            <p class="dish-title">bułka.................................................17</p>
-            <p class="dish-text">(falafel, bułka, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-6 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-7">
-            <p class="dish-title">Box......................................................17</p>
-            <p class="dish-text">(kurczak, frytki lub surówka, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-7 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-8">
-            <p class="dish-title">Box......................................................17</p>
-            <p class="dish-text">(falafel, frytki lub surówka, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-8 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->                
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-9">
-            <p class="dish-title">TALERZ................................................22</p>
-            <p class="dish-text">(kurczak, frytki, lawasz, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-9 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-10">
-            <p class="dish-title">TALERZ................................................22</p>
-            <p class="dish-text">(falafel, frytki, lawasz, surówka, pomidor, ogórek, cebula, sos do wyboru)</p>
-          </div>
-          <!-- /.dish-10 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-        <div class="col-lg-5 px-0">
-          <div class="dish dish-11">
-            <p class="dish-title-desert">Napój owocowy<span class="price">...........5</span> </p>
-            <p class="dish-text-desert">(Rokitnik, Borówka brusznica)</p>
-          </div>
-          <!-- /.dish-11 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button button-desert">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-         <div class="col-lg-5 px-0">
-          <div class="dish dish-12">
-            <p class="dish-title-desert">Frytki<span class="price">............................................5</span> </p>
-            <p class="dish-text-desert"></p>
-          </div>
-          <!-- /.dish-12 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button button-desert">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-             <div class="col-lg-11 px-0">
-          <div class="dish dish-13">
-            <p class="dish-title-sosy">SOSY:<span  class="dish-title-sosy-span">  łagodny, ostry, czosnkowy, vegamayo, super ostry...................................5</span> </p>
-            <p class="dish-text-desert"></p>
-          </div>
-          <!-- /.dish-12 -->
-        </div>
-        <!-- /.col-lg-5 -->
-        <div class="col-lg-1 d-flex align-items-start">
-          <button class="button button-desert">
-            <img class="button-icon" src="img/button-icon.svg" alt="icon: cart">
-            <!-- <span class="button-text">Cart</span> -->
-          </button>
-        </div>
-        <!-- /.col-lg-1 -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.menu-panzorro -->
-  <footer class="footer d-flex">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <p class="footer-text">Copyright © 2021 | Pan Zorro</p>
-        </div>
-        <!-- /.col-lg-9 -->
-        <div class="col-lg-3 d-flex align-items-center">
-          <span class="footer-social d-flex"> <!-- inline выстраивает в одну линию с "Follow Us" -->
-            <a href="#" class="social-link">
-              <img src="img/social/Logo_Instagram.svg" alt="Instagram">
-            </a>
-            <a href="#" class="social-link">
-              <img src="img/social/Logo_FaceBook.svg" alt="Facebook">
-            </a>
-            <a href="#" class="social-link">
-              <img src="img/social/Logo_YouTube.svg" alt="Instagram">
-            </a>
-			</span>
-        </div>
-        <!-- /.col-lg-3 -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </footer>
-  <!-- /.footer -->
+		<section class="menu-panzorro">
+			<div class="container">
+				<div class="row row-panzorro justify-content-center">
+					<!-- MENU -->
+					<div class="col-xl-6 px-0">
+						<div class="titles-1">
+							<h1 class="menu">MENU</h1>
+						</div>
+						<!-- /.titles -->
+					</div>
+					<!-- /.col-xxl-6 -->
 
+					<!-- Logo PanZorro -->
+					<div class="col-xl-6 px-0">
+						<div class="titles-1">
+							<img src="img/panZorro.svg" alt="PanZorro" height="150px" />
+						</div>
+						<!-- /.titles-1 -->
+					</div>
+					<!-- /.col-xxl-6 -->
 
-</body>
+					<!-- KEBAB-MENU -->
+					<div class="col-xl-6 px-0">
+						<div class="kebab-menu">
+							<div class="col-xl-12 titles-2">
+								<h2 class="kebab">kebab</h2>
+							</div>
+							<!-- /.titles-2 -->
+
+							<div class="menu-line line-1">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-1">
+										<p class="dish-title">
+											SHOARMA mała...............................
+										</p>
+										<p class="dish-text">
+											(kurczak, lawasz, surówka, pomidor, ogórek, cebula, sos do
+											wyboru)
+										</p>
+									</div>
+									<!-- /.dish-1 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-1">
+										<p class="dish-title">15</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-1 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-1 -->
+
+							<div class="menu-line line-2">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-2">
+										<p class="dish-title">
+											SHOARMA duża...............................
+										</p>
+										<p class="dish-text">
+											(kurczak, lawasz, surówka, pomidor, ogórek, cebula, sos do
+											wyboru)
+										</p>
+									</div>
+									<!-- /.dish-2 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-2">
+										<p class="dish-title">17</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-2 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-2 -->
+
+							<div class="menu-line line-3">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-3">
+										<p class="dish-title">
+											bułka..................................................
+										</p>
+										<p class="dish-text">
+											(kurczak, bułka, surówka, pomidor, ogórek, cebula, sos do
+											wyboru)
+										</p>
+									</div>
+									<!-- /.dish-3 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-3">
+										<p class="dish-title">17</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-3 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-3 -->
+
+							<div class="menu-line line-4">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-4">
+										<p class="dish-title">
+											Box.......................................................
+										</p>
+										<p class="dish-text">
+											(kurczak, frytki lub surówka, sos do wyboru)
+										</p>
+									</div>
+									<!-- /.dish-4 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-4">
+										<p class="dish-title">17</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-4 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-4 -->
+
+							<div class="menu-line line-5">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-5">
+										<p class="dish-title">
+											TALERZ.................................................
+										</p>
+										<p class="dish-text">
+											(kurczak, frytki, lawasz, surówka, pomidor, ogórek,
+											cebula, sos do wyboru)
+										</p>
+									</div>
+									<!-- /.dish-5 -->
+								</div>
+								<!-- /.col-xxl-5 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-5">
+										<p class="dish-title">22</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-5 -->
+								</div>
+								<!-- /.col-xxl-5 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-5 -->
+						</div>
+						<!-- /.kebab-menu -->
+					</div>
+					<!-- /.col-xxl-6 -->
+
+					<!-- VEGAN-MENU -->
+					<div class="col-xl-6 px-0">
+						<div class="vegan-menu">
+							<div class="col-xl-12 titles-2">
+								<h2 class="vegan">vegan</h2>
+							</div>
+							<!-- /.titles -->
+
+							<div class="menu-line line-1">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-7">
+										<p class="dish-title">
+											SHOARMA mała...............................
+										</p>
+										<p class="dish-text">
+											(falafel, lawasz, surówka, pomidor, ogórek, cebula, sos do
+											wyboru)
+										</p>
+									</div>
+									<!-- /.dish-7 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-7">
+										<p class="dish-title">15</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-7 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-1 -->
+
+							<div class="menu-line line-2">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-8">
+										<p class="dish-title">
+											SHOARMA duża...............................
+										</p>
+										<p class="dish-text">
+											(falafel, lawasz, surówka, pomidor, ogórek, cebula, sos do
+											wyboru)
+										</p>
+									</div>
+									<!-- /.dish-8 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-8">
+										<p class="dish-title">17</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-8 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-2 -->
+
+							<div class="menu-line line-3">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-9">
+										<p class="dish-title">
+											bułka..................................................
+										</p>
+										<p class="dish-text">
+											(falafel, bułka, surówka, pomidor, ogórek, cebula, sos do
+											wyboru)
+										</p>
+									</div>
+									<!-- /.dish-9 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-9">
+										<p class="dish-title">17</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-9 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xxl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-3 -->
+
+							<div class="menu-line line-4">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-10">
+										<p class="dish-title">
+											Box.......................................................
+										</p>
+										<p class="dish-text">
+											(falafel, frytki lub surówka, sos do wyboru)
+										</p>
+									</div>
+									<!-- /.dish-10 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-10">
+										<p class="dish-title">17</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-10 -->
+								</div>
+								<!-- /.col-xxl-10 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-4 -->
+
+							<div class="menu-line line-5">
+								<div class="col-xl-10 px-0">
+									<div class="dish dish-11">
+										<p class="dish-title">
+											TALERZ.................................................
+										</p>
+										<p class="dish-text">
+											(falafel, frytki, lawasz, surówka, pomidor, ogórek,
+											cebula, sos do wyboru)
+										</p>
+									</div>
+									<!-- /.dish-11 -->
+								</div>
+								<!-- /.col-xxl-5 -->
+
+								<div class="col-xl-1 px-0">
+									<div class="dish dish-11">
+										<p class="dish-title">22</p>
+										<p class="dish-text"></p>
+									</div>
+									<!-- /.dish-11 -->
+								</div>
+								<!-- /.col-xxl-5 -->
+
+								<div
+									class="col-xl-1 d-flex align-items-start justify-content-end"
+								>
+									<button class="button-line">
+										<img
+											class="button-icon"
+											src="img/button-icon.svg"
+											alt="icon: cart"
+										/>
+										<!-- <span class="button-text">Cart</span> -->
+									</button>
+								</div>
+								<!-- /.col-xxl-2 -->
+							</div>
+							<!-- /.menu-line line-5 -->
+						</div>
+						<!-- /.vegan-menu -->
+					</div>
+					<!-- /.col-xxl-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.menu-panzorro -->
+
+		<section class="napoj-frutki justify-content-center">
+			<div class="container">
+				<div class="row">
+					<!-- Napój owocowy -->
+					<div class="col-xl-6 px-0 menu-line line-6">
+						<div class="col-xl-10 px-0">
+							<div class="dish dish-6">
+								<p class="dish-title-desert">
+									Napój owocowy<span class="price">.........</span>
+								</p>
+								<p class="dish-text-desert">(Rokitnik, Borówka brusznica)</p>
+							</div>
+							<!-- /.dish-6 -->
+						</div>
+						<!-- /.col-xxl-10 -->
+
+						<div class="col-xl-1 px-0">
+							<div class="dish dish-6-price">
+								<p class="dish-title-desert">
+									<span class="price price-napoj">5 </span>
+								</p>
+								<p class="dish-text-desert"></p>
+							</div>
+							<!-- /.dish-6 -->
+						</div>
+						<!-- /.col-xxl-10 -->
+
+						<div class="col-xl-1 d-flex align-items-start justify-content-end">
+							<button class="button-desert">
+								<img
+									class="button-icon"
+									src="img/button-icon.svg"
+									alt="icon: cart"
+								/>
+								<!-- <span class="button-text">Cart</span> -->
+							</button>
+						</div>
+						<!-- /.col-xxl-2 -->
+					</div>
+
+					<!-- Frytki -->
+					<div class="col-xl-6 px-0 menu-line line-6">
+						<div class="col-xl-10 px-0">
+							<div class="dish dish-12">
+								<p class="dish-title-desert">
+									Frytki<span class="price"
+										>...........................................</span
+									>
+								</p>
+								<p class="dish-text-desert"></p>
+							</div>
+							<!-- /.dish-12 -->
+						</div>
+						<!-- /.col-xl-10 -->
+
+						<div class="col-xl-1 px-0">
+							<div class="dish dish-12-price">
+								<p class="dish-title-desert"><span class="price">5</span></p>
+								<p class="dish-text-desert"></p>
+							</div>
+							<!-- /.dish-12 -->
+						</div>
+						<!-- /.col-xxl-10 -->
+
+						<div class="col-xl-1 d-flex align-items-start justify-content-end">
+							<button class="button-desert">
+								<img
+									class="button-icon"
+									src="img/button-icon.svg"
+									alt="icon: cart"
+								/>
+								<!-- <span class="button-text">Cart</span> -->
+							</button>
+						</div>
+						<!-- /.col-xxl-2 -->
+					</div>
+					<!-- /.col-xl-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.napoj-frutki -->
+
+		<section class="sosy justify-content-center">
+			<div class="container">
+				<div class="row">
+					<!-- SOSY -->
+					<div class="col-xl-12 d-flex justify-content-center sosy-col-12">
+						<div class="col-xl-11 col-lg-6 col-md-8 col-sm-9 col-9">
+							<div class="dish dish-13">
+								<span class="sosy-lit dish-title-sosy">SOSY:</span
+								><span class="dish-title-sosy-span">
+									łagodny, ostry, czosnkowy, vegamayo, super
+									ostry................................</span
+								>
+								<!-- <p class="dish-text-desert"></p> -->
+							</div>
+							<!-- /.dish-13 -->
+						</div>
+						<!-- /.col-xxl-5 -->
+						<div
+							class="col-xl-1 col-lg-2 col-sm-2 d-flex px-0 align-items-start justify-content-end button-sosy"
+						>
+							<button class="button button-desert-sosy">
+								<span class="dish-title-sosy-price">5</span>
+								<img
+									class="button-icon"
+									src="img/button-icon.svg"
+									alt="icon: cart"
+								/>
+								<!-- <span class="button-text">Cart</span> -->
+							</button>
+						</div>
+						<!-- /.col-xxl-1 -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer d-flex justify-content-center">
+			<div class="container align-items-center">
+				<div
+					class="row footer-row d-flex align-items-center justify-content-between"
+				>
+					<div class="col-xl-6 footer-copyright">
+						<p class="footer-text">Copyright © 2021 | Pan Zorro</p>
+					</div>
+					<!-- /.col-xl-9 -->
+					<div class="col-xl-3 d-flex footer-social-block align-items-center">
+						<span class="footer-social d-flex">
+							<!-- inline выстраивает в одну линию с "Follow Us" -->
+							<a href="#" class="social-link">
+								<img src="img/social/Logo_Instagram.svg" alt="Instagram" />
+							</a>
+							<a href="#" class="social-link">
+								<img src="img/social/Logo_FaceBook.svg" alt="Facebook" />
+							</a>
+							<a href="#" class="social-link">
+								<img src="img/social/Logo_YouTube.svg" alt="Instagram" />
+							</a>
+						</span>
+					</div>
+					<!-- /.col-xxl-3 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</footer>
+		<!-- /.footer -->
+	</body>
 </html>
