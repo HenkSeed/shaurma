@@ -1,20 +1,20 @@
 @font-face {
 	font-family: "oswald-light";
-	src: url("../fonts/oswald-light.ttf") format("truetype");
+	src: url("../fonts/Oswald-Light.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "oswald-regular";
-	src: url("../fonts/oswald-regular.ttf") format("truetype");
+	src: url("../fonts/Oswald-Regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "oswald-bold";
-	src: url("../fonts/oswald-bold.ttf") format("truetype");
+	src: url("../fonts/oswald-bold.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -341,10 +341,6 @@ body {
 	justify-content: end;
 }
 
-.footer-social {
-	/* margin-left: 40px; */
-}
-
 .social-link {
 	margin-left: 10px;
 }
@@ -399,12 +395,6 @@ body {
 	.button-desert {
 		margin-top: 50px;
 	}
-	.button-desert-sosy {
-		/* margin-top: 100px; */
-		/* background-color: #fff; */
-		/* border: none; */
-		/* padding: 0; */
-	}
 }
 
 @media (max-width: 1200px) {
@@ -450,9 +440,7 @@ body {
 		padding-left: 0;
 		justify-content: center;
 	}
-	.sosy-col-12 {
-		/* width: 640px; */
-	}
+
 	.dish-13 {
 		padding-left: 10px;
 		display: flex;
